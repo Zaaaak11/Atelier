@@ -30,6 +30,10 @@ class Doctor(User):
     def __str__(self):
         return self.get_full_name() or self.username
 
+    class Meta:
+        verbose_name = 'Doctor'
+        verbose_name_plural = 'Doctors'
+
 
 
 def validate_past_date(value):
@@ -54,3 +58,7 @@ class Patient(User):
     )
     def __str__(self):
         return self.get_full_name() or self.username
+
+    class Meta:
+        verbose_name = 'Patient'
+        verbose_name_plural = 'Patients'

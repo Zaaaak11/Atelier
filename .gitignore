@@ -16,3 +16,6 @@ media/
 # IDE
 .idea/
 .vscode/
+
+# Claude
+.claude/
